@@ -1,0 +1,149 @@
+@import '../../../style/index.scss';
+
+.herobanner {
+    @media (max-width:768px) {
+        padding: 80px 0;
+    }
+
+    .herosection {
+        @media (max-width:768px) {
+            padding: 0;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 60px;
+            letter-spacing: -.02em;
+            line-height: 72px;
+            font-family: Space Grotesk, sans-serif;
+            margin: 0 0 42px;
+            max-width: 650px;
+            color: var(--theme-heading-text-color);
+
+            @media (max-width:768px) {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 38px;
+                letter-spacing: -.02em;
+                font-family: var(--defult-primary-font);
+            }
+
+            @media (max-width:340px) {
+                font-size: 25px;
+            }
+
+            @media (max-width:290px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            max-width: 480px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--theme-heading-text-color);
+            margin: 0 0 42px;
+
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
+        }
+
+        .search-bar {
+            background-color: var(--theme-searchbar-box-backgroound-color);
+            box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+            padding: 12px 24px;
+            margin: 0 0 20px;
+            width: 650px;
+            border-radius: 32px;
+            border: 1px solid var(--theme-searchbar-box-border-color);
+
+            @media (max-width:768px) {
+                width: 100%;
+            }
+
+            .search-bar-grid {
+
+                @media (max-width:768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 10px;
+                }
+
+                .serch-bar-grid-item {
+
+                    @media (max-width:768px) {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        cursor: pointer;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 56px;
+                        background-color: transparent;
+                        border: none;
+                        font-weight: 400;
+                        color: var(--theme-search-text-color);
+                    }
+
+                    .button1 {
+                        background-color: transparent;
+                        height: 56px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        @media (max-width:768px) {
+                            width: 100%;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    .button {
+                        .button {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            @media (max-width:768px) {
+                                padding: 8px 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .select-button {
+            button {
+                display: flex;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                background-color: var(--theme-gay-button-background-color);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: var(--defult-primary-font);
+                color: var(--theme-gay-button-text-color);
+                padding: 4px 12px;
+                border-radius: 999px;
+
+                span {
+                    padding: 0 6px 0 0;
+                }
+            }
+        }
+    }
+}

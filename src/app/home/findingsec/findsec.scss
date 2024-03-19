@@ -1,0 +1,31 @@
+@import '../../../style/index.scss';
+
+.findingsec {
+    .find-heading {
+        @media (max-width:768px) {
+            padding-bottom: 60px;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -.02em;
+            font-family: var(--defult-primary-font);
+            color: var(--theme-heading-text-color);
+            max-width: 754px;
+            margin: 0 auto;
+            text-align: center;
+
+            @media (max-width:768px) {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: var(--defult-primary-font);
+            }
+        }
+
+
+
+    }
+}

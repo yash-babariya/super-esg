@@ -1,0 +1,36 @@
+@import '../../../style/index.scss';
+
+.header {
+    .menu {
+        @media (max-width:1024px) {
+            display: none;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #101828;
+            padding-right: 50px;
+            padding: 0 50px 0 0;
+
+            img {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    .login-button {
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+
+        @media (max-width:1024px) {
+            display: block;
+        }
+    }
+}
